@@ -50,6 +50,7 @@ const observer = new IntersectionObserver(entries => {
         scrub:true
     }
   })
+  
 
   balonAnimation.to(".AnimBalon",{x:500,y:400 , rotation: 20, duration:10})
   .to(".AnimBalon",{x:310, y:500,rotation:1,duration:6})
