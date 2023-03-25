@@ -73,7 +73,7 @@ body {
     width: 100%;
     min-height: 300px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -98,7 +98,7 @@ body {
   background: linear-gradient(0deg, #ccacff, #481699);
   font-size: 30px;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   padding-right: 10px;
   transition: all 3s linear;
   font-family: "Kaushan Script", cursive;
@@ -115,7 +115,7 @@ body {
   background: linear-gradient(0deg, #853ef8, #3d0d8a);
   font-size: 80px;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   font-family: "Staatliches", cursive;
   letter-spacing: 3px;
 }
@@ -271,7 +271,7 @@ body {
   max-width: 1400px;
   min-height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: auto;
 }
 
@@ -412,7 +412,7 @@ nav ol {
   justify-content: space-around;
   width: 600px;
   -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(133, 62, 248, 0.2274509804);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.0352941176);
@@ -432,7 +432,7 @@ nav ol {
 }
 nav ol:hover {
   -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 nav ol li {
   padding: 5px;
@@ -527,4 +527,4 @@ nav ol li a i {
   100% {
     transform: rotate(20deg);
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
