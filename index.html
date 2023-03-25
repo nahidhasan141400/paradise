@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/style.css" />
+
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,23 +22,27 @@
   <body>
     <section class="main">
       <div class="header">
-        <img class="bg" src="./src/img/hero/bg.jpg" alt="" />
-        <img class="moon" src="./src/img/hero/moon.png" alt="" />
-        <img src="./src/img/hero/land.png" alt="" />
-        <img src="./src/img/hero/balon--left.png" alt="" />
-        <img src="./src/img/hero/balon.png" alt="" />
-        <img src="./src/img/hero/front-tree.png" alt="" />
+        <img class="bg" style="position: relative;" id="herobg" src="./src/img/hero/bg.jpg" alt="" />
+
+        <img class="moon" id="moon" src="./src/img/hero/moon.png" alt="" />
+
+        <img id="land" src="./src/img/hero/land.png" alt="" />
+
+        <img id="ballon" src="./src/img/hero/balon.png" alt="" />
+        <img id="front" src="./src/img/hero/front-tree.png" alt="" />
       </div>
     </section>
-    <section class="name">
+    <section class="name" >
       <div class="intro">
-        <h2>Introducing</h2>
-        <h1>PARADISE SOLUTION</h1>
+        <h2 data-aos="fade-up"  data-aos-easing="linear"
+        data-aos-duration="2500">Introducing</h2>
+        <h1  id="intro" data-aos="fade-up"  data-aos-easing="linear"
+        data-aos-duration="1500">PARADISE SOLUTION</h1>
       </div>
     </section>
     <section class="about">
       <div class="about-con">
-        <p>
+        <p class="nh">
           The Paradise Solution is a team of multidisciplinary Digital Product
           experts based in Dhaka, Bangladesh. We are passionate about the design
           of User Interface, linking interactivity and user experience. We had
@@ -45,22 +53,26 @@
       </div>
     </section>
     <section class="service">
+      <div class="width-100">
+        <img class="AnimBalon" src="./src/img/hero/balon-big.png" alt="">
+        <img class="AnimBalon2" src="./src/img/hero/balon-big.png" alt="">
+      </div>
       <div class="con">
         <!-- box start  -->
         <div class="box">
           <div class="titel">
-            <p>Marketing</p>
+            <p >Marketing</p>
           </div>
           <div class="row">
-            <div class="it">facebook Ads.</div>
-            <div class="it">facebook Ads.</div>
-            <div class="it">facebook Ads.</div>
-            <div class="it">development Ads.</div>
-            <div class="it">facebook Abjdhkjhds.</div>
-            <div class="it">facebook Ads.</div>
-            <div class="it">facebook Ads.</div>
-            <div class="it">facebook Ads.</div>
-            <div class="it">facebook Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="1000">facebook Ads.</div>
+            <div class="it"  data-aos="zoom-in-down" data-aos-duration="2000">facebook Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="3000">facebook Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="4000">development Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="5000">facebook Abjdhkjhds.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="6000">facebook Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="7000">facebook Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="8000">facebook Ads.</div>
+            <div class="it" data-aos="zoom-in-down" data-aos-duration="9000">facebook Ads.</div>
           </div>
         </div>
         <!-- design  -->
@@ -135,6 +147,13 @@
       <p><a href="#">© Paradise Solution</a></p>
     </footer>
 
+    <!-- script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./src/main.js"></script>
   </body>
 </html>
