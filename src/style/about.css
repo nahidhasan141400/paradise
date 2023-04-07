@@ -56,7 +56,11 @@
 .aboutus {
   width: 100%;
   position: relative;
-  background-color: purple;
+  background: radial-gradient(circle at top, transparent 9%, #870987 10%, #870987 15%, transparent 16%), radial-gradient(circle at bottom, transparent 19%, #870987 20%, #870987 25%, transparent 26%), radial-gradient(circle at right, transparent 19%, #870987 20%, #870987 25%, transparent 26%), radial-gradient(circle at left, transparent 9%, #870987 10%, #870987 15%, transparent 16%);
+  background-size: 6em 6em;
+  background-color: #800080;
+  opacity: 1;
+  overflow: hidden;
 }
 .aboutus .con {
   position: relative;
@@ -64,4 +68,63 @@
   max-width: 1200px;
   margin: auto;
   padding: 20px 10px;
+  padding-top: 100px;
+}
+.aboutus .con .titel {
+  font-size: 30px;
+  color: rgb(255, 195, 255);
+  font-weight: 800;
+  padding: 20px 0;
+}
+.aboutus .con .des {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: 300;
+  padding-bottom: 70px;
+}
+
+.why {
+  width: 100%;
+  position: relative;
+}
+.why .bggr1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  top: -300px;
+  border: 60px solid purple;
+}
+.why .con {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+}
+.why .con .layout {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+.why .con .layout .text {
+  position: relative;
+}
+.why .con .layout .text .titel {
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(20deg, rgb(182, 0, 182), rgb(10, 0, 10));
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.why .con .layout .text .text {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
 }/*# sourceMappingURL=about.css.map */

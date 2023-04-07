@@ -60,12 +60,102 @@
 .aboutus {
   width: 100%;
   position: relative;
-  background-color: purple;
+  background: radial-gradient(
+      circle at top,
+      transparent 9%,
+      #870987 10%,
+      #870987 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom,
+      transparent 19%,
+      #870987 20%,
+      #870987 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 19%,
+      #870987 20%,
+      #870987 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 9%,
+      #870987 10%,
+      #870987 15%,
+      transparent 16%
+    );
+  background-size: 6em 6em;
+  background-color: #800080;
+  opacity: 1;
+  overflow: hidden;
   .con {
     position: relative;
     width: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 20px 10px;
+    padding-top: 100px;
+    .titel {
+      font-size: 30px;
+      color: rgb(255, 195, 255);
+      font-weight: 800;
+
+      padding: 20px 0;
+    }
+    .des {
+      font-size: 20px;
+      color: aliceblue;
+      font-weight: 300;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+.why {
+  width: 100%;
+  position: relative;
+  // bg
+  .bggr1 {
+    position: absolute;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    top: -300px;
+    border: 60px solid purple;
+  }
+  .con {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+    .layout {
+      width: 100%;
+      text-align: center;
+      padding: 50px 0;
+      .text {
+        position: relative;
+        .titel {
+          font-size: 40px;
+          font-weight: 800;
+          background: linear-gradient(20deg, rgb(182, 0, 182), rgb(10, 0, 10));
+          color: transparent;
+          background-clip: text;
+        }
+        .text {
+          padding: 10px;
+          border-radius: 20px;
+          margin: 10px 0;
+          backdrop-filter: blur(20px);
+          font-size: 20px;
+          font-weight: 300;
+          text-align: justify;
+        }
+      }
+    }
   }
 }

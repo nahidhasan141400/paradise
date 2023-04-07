@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+header .bg {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  height: 100vh;
+}
+header .bg img {
+  height: 100%;
+  float: right;
+}
+header .con {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .text {
+  color: white;
+  text-align: center;
+}
+header .text .ti {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+}
+header .text h1 {
+  font-size: 70px;
+}
+header .text .typetext {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.links {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 100;
+}
+.links .con .lisks ol {
+  list-style: none;
+  color: #fff;
+  height: 230px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.links .con .lisks ol li {
+  width: 40px;
+  border: 2px solid #fff;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.links .con .lisks ol li:hover {
+  background-color: rgba(255, 255, 255, 0.1921568627);
+}
+.links .con .lisks ol li a {
+  color: #fff;
+  font-size: 22px;
+}
+
+.about {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+.about .con {
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px;
+  margin: auto;
+  position: relative;
+}
+.about .con .layout {
+  display: flex;
+}
+.about .con .layout .img {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+}
+.about .con .layout .img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about .con .layout .text {
+  flex: 3;
+  width: 100%;
+  padding-left: 10px;
+}
+.about .con .layout .text .titel {
+  width: 100%;
+  font-size: 30px;
+  padding: 15px 0;
+}
+.about .con .layout .text .text {
+  font-size: 20px;
+  padding-left: 0px;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+.about .con .layout .text .skil .ti {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.about .con .layout .text .skil .cons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+.about .con .layout .text .skil .cons .card {
+  margin: 5px 10px;
+  margin-left: 0px;
+}
+.about .con .layout .text .skil .cons .card a {
+  padding: 5px 10px;
+  background: #141414;
+  text-decoration: none;
+  color: #fff;
+}
+
+.service {
+  width: 100%;
+  position: relative;
+  background: #000;
+  background: radial-gradient(circle at bottom left, #0c0c0c 35%, transparent 36%), radial-gradient(circle at top right, #0c0c0c 35%, transparent 36%);
+  background-size: 6em 6em;
+  background-color: #000000;
+  opacity: 1;
+  padding: 100px 0px;
+}
+.service .con {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+.service .con .titels {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.service .con .card {
+  width: 80%;
+  height: 400px;
+  background-color: #0c0c0c;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 100px #242424;
+  margin-bottom: 100px;
+}
+.service .con .card .img {
+  height: 100%;
+  float: right;
+}
+.service .con .card .img img {
+  height: 100%;
+  float: right;
+}
+.service .con .card .img .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, black 40%, transparent);
+}
+.service .con .card .text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.service .con .card .text .icon {
+  font-size: 30px;
+}
+.service .con .card .text .titel {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.service .con .card .text .titel span {
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+}
+.service .con .card .text .titel p {
+  font-size: 30px;
+}
+.service .con .card .text .des {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.service .con .card .text .des p {
+  width: 60%;
+  text-align: justify;
+}
+.service .con .card2 {
+  width: 80%;
+  height: 400px;
+  background-color: #0c0c0c;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 100px #242424;
+  margin-bottom: 100px;
+}
+.service .con .card2 .img {
+  height: 100%;
+  float: left;
+}
+.service .con .card2 .img img {
+  height: 100%;
+  float: left;
+}
+.service .con .card2 .img .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(-90deg, black 40%, transparent);
+}
+.service .con .card2 .text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: right;
+}
+.service .con .card2 .text .icon {
+  font-size: 30px;
+}
+.service .con .card2 .text .titel {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.service .con .card2 .text .titel span {
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+}
+.service .con .card2 .text .titel p {
+  font-size: 30px;
+}
+.service .con .card2 .text .des {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.service .con .card2 .text .des p {
+  width: 60%;
+  float: right;
+  text-align: justify;
+}/*# sourceMappingURL=hira.css.map */
