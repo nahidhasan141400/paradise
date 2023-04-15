@@ -24,4 +24,3 @@ var typewriter = new Typewriter(app, {
   .pauseFor(5000)
   .start();  
 
-  console.log("nahid")

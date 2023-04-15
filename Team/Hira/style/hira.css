@@ -297,4 +297,63 @@ header .text .typetext {
   width: 60%;
   float: right;
   text-align: justify;
+}
+
+.skill {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+.skill .con {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.skill .con .titel {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+.skill .con .card-Con {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill .con .card-Con .card {
+  margin: 10px;
+  width: 200px;
+  height: 80px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #242424;
+  cursor: pointer;
+}
+.skill .con .card-Con .card .icon {
+  position: absolute;
+  height: 100%;
+  left: -10px;
+  top: -20px;
+  z-index: 0;
+}
+.skill .con .card-Con .card .icon img {
+  position: relative;
+  height: 150%;
+  z-index: 1;
+}
+.skill .con .card-Con .card .name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: linear-gradient(-90deg, transparent, #242424);
+}
+.skill .con .card-Con .card .name p {
+  font-size: 30px;
 }/*# sourceMappingURL=hira.css.map */
