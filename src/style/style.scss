@@ -477,3 +477,25 @@ nav {
 }
 
 @import "./service";
+
+.scroll {
+  width: 100%;
+  position: fixed;
+  top: 90%;
+  color: #fff;
+  font-size: 25px;
+  z-index: 100000;
+  display: flex;
+  justify-content: end;
+  div {
+    margin-right: 100px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

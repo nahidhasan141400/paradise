@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- aos  -->
+
+    <!-- aos  -->
+    <!-- paralax  -->
+    <script src="../src/atropos/atropos.min.js"></script>
+    <link rel="stylesheet" href="../src/atropos/atropos.min.css" />
 
     <link
       rel="stylesheet"
@@ -28,7 +34,14 @@
     <title>Shariful Haque Hira</title>
   </head>
   <body>
-    <header>
+    <nav>
+      <a href="../Teams.html">Back to Paradise</a>
+    </nav>
+    <header
+      data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <div class="bg">
         <img src="./Hira/img/potrait.jpg" alt="" />
       </div>
@@ -68,10 +81,10 @@
     <section class="about">
       <div class="con">
         <div class="layout">
-          <div class="img">
+          <div data-aos="zoom-out" class="img">
             <img src="../src/img/team/Md-Shariful-Haque.jpg" alt="hira photo" />
           </div>
-          <div class="text">
+          <div data-aos="flip-down" class="text">
             <div class="titel">
               <p>About Me</p>
             </div>
@@ -109,118 +122,228 @@
         <div class="titels">
           <p>I can help You in ..</p>
         </div>
-        <div id="Photographer" class="card">
-          <div class="img">
-            <img src="./Hira/img/photoGraphi.png" alt="" />
-            <div class="overlay"></div>
+
+        <!-- card  -->
+        <div data-aos="fade-down" class="m">
+          <!-- main Atropos container (required), add your custom class here -->
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <!-- put your custom content here -->
+                  <div id="Photographer" class="card">
+                    <div class="img">
+                      <img
+                        data-atropos-offset="-5"
+                        src="./Hira/img/photoGraphi.png"
+                        alt=""
+                      />
+                      <div class="overlay"></div>
+                    </div>
+                    <div class="text">
+                      <div class="icon"></div>
+                      <div class="titel">
+                        <span>professional</span> <br />Photography &
+                        Cinematography
+                      </div>
+                      <div class="des">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptatem, mollitia? Facere provident
+                          praesentium magni tempore ipsa quasi, a maxime? Ipsam
+                          aliquam quibusdam possimus animi et mollitia aut porro
+                          asperiores officiis. <br />
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Fugit laboriosam voluptatum cupiditate
+                          laudantium a, eaque atque, recusandae voluptatibus
+                          reiciendis fuga ullam dolorum! Totam eius cum nobis
+                          reprehenderit error accusamus molestias.
+                        </p>
+                      </div>
+                      <!-- <div class="action">
+    <button>Book A Event</button>
+  </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text">
-            <div class="icon"></div>
-            <div class="titel">
-              <span>professional</span> <br />Photography & Cinematography
-            </div>
-            <div class="des">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem, mollitia? Facere provident praesentium magni tempore
-                ipsa quasi, a maxime? Ipsam aliquam quibusdam possimus animi et
-                mollitia aut porro asperiores officiis. <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                laboriosam voluptatum cupiditate laudantium a, eaque atque,
-                recusandae voluptatibus reiciendis fuga ullam dolorum! Totam
-                eius cum nobis reprehenderit error accusamus molestias.
-              </p>
-            </div>
-            <!-- <div class="action">
+        </div>
+
+        <!-- card  -->
+        <div data-aos="fade-down" class="m">
+          <!-- main Atropos container (required), add your custom class here -->
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <!-- put your custom content here -->
+                  <div id="Graphic" class="card">
+                    <!-- put your custom content here -->
+                    <div class="img">
+                      <img
+                        data-atropos-offset="-5"
+                        src="./Hira/img/GRAPHIC.png"
+                        alt=""
+                      />
+                      <div class="overlay"></div>
+                    </div>
+                    <div class="text">
+                      <div class="icon"></div>
+                      <div class="titel">
+                        <span>professional</span> <br />
+                        Graphic Design
+                      </div>
+                      <div class="des">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptatem, mollitia? Facere provident
+                          praesentium magni tempore ipsa quasi, a maxime? Ipsam
+                          aliquam quibusdam possimus animi et mollitia aut porro
+                          asperiores officiis. <br />
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Fugit laboriosam voluptatum cupiditate
+                          laudantium a, eaque atque, recusandae voluptatibus
+                          reiciendis fuga ullam dolorum! Totam eius cum nobis
+                          reprehenderit error accusamus molestias.
+                        </p>
+                      </div>
+                      <!-- <div class="action">
               <button>Book A Event</button>
             </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- card  -->
-        <div id="Graphic" class="card">
-          <div class="img">
-            <img src="./Hira/img/GRAPHIC.png" alt="" />
-            <div class="overlay"></div>
-          </div>
-          <div class="text">
-            <div class="icon"></div>
-            <div class="titel">
-              <span>professional</span> <br />
-              Graphic Design
-            </div>
-            <div class="des">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem, mollitia? Facere provident praesentium magni tempore
-                ipsa quasi, a maxime? Ipsam aliquam quibusdam possimus animi et
-                mollitia aut porro asperiores officiis. <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                laboriosam voluptatum cupiditate laudantium a, eaque atque,
-                recusandae voluptatibus reiciendis fuga ullam dolorum! Totam
-                eius cum nobis reprehenderit error accusamus molestias.
-              </p>
-            </div>
-            <!-- <div class="action">
-                <button>Book A Event</button>
-              </div> -->
-          </div>
-        </div>
-        <!-- card  -->
-        <div id="Digital" class="card2">
-          <div class="img">
-            <img src="./Hira/img/digitalmarketing.png" alt="" />
-            <div class="overlay"></div>
-          </div>
-          <div class="text">
-            <div class="icon"></div>
-            <div class="titel">
-              <span>professional</span> <br />
-              Digital Marketing
-            </div>
-            <div class="des">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem, mollitia? Facere provident praesentium magni tempore
-                ipsa quasi, a maxime? Ipsam aliquam quibusdam possimus animi et
-                mollitia aut porro asperiores officiis. <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                laboriosam voluptatum cupiditate laudantium a, eaque atque,
-                recusandae voluptatibus reiciendis fuga ullam dolorum! Totam
-                eius cum nobis reprehenderit error accusamus molestias.
-              </p>
-            </div>
-            <!-- <div class="action">
+        <div data-aos="fade-down" class="m">
+          <!-- main Atropos container (required), add your custom class here -->
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <!-- put your custom content here -->
+                  <div id="Digital" class="card2">
+                    <!-- put your custom content here -->
+                    <div class="img">
+                      <img
+                        data-atropos-offset="-5"
+                        src="./Hira/img/digitalmarketing.png"
+                        alt=""
+                      />
+                      <div class="overlay"></div>
+                    </div>
+                    <div class="text">
+                      <div class="icon"></div>
+                      <div class="titel">
+                        <span>professional</span> <br />
+                        Digital Marketing
+                      </div>
+                      <div class="des">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptatem, mollitia? Facere provident
+                          praesentium magni tempore ipsa quasi, a maxime? Ipsam
+                          aliquam quibusdam possimus animi et mollitia aut porro
+                          asperiores officiis. <br />
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Fugit laboriosam voluptatum cupiditate
+                          laudantium a, eaque atque, recusandae voluptatibus
+                          reiciendis fuga ullam dolorum! Totam eius cum nobis
+                          reprehenderit error accusamus molestias.
+                        </p>
+                      </div>
+                      <!-- <div class="action">
                   <button>Book A Event</button>
                 </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- card  -->
-        <div id="Electrical" class="card2">
-          <div class="img">
-            <img src="./Hira/img/electric.png" alt="" />
-            <div class="overlay"></div>
+        <div data-aos="fade-down" class="m">
+          <!-- main Atropos container (required), add your custom class here -->
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <!-- put your custom content here -->
+                  <div id="Electrical" class="card2">
+                    <!-- put your custom content here -->
+                    <div class="img">
+                      <img
+                        data-atropos-offset="-5"
+                        src="./Hira/img/electric.png"
+                        alt=""
+                      />
+                      <div class="overlay"></div>
+                    </div>
+                    <div class="text">
+                      <div class="icon"></div>
+                      <div class="titel">
+                        <span>professional</span> <br />
+                        Engineer Service
+                      </div>
+                      <div class="des">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptatem, mollitia? Facere provident
+                          praesentium magni tempore ipsa quasi, a maxime? Ipsam
+                          aliquam quibusdam possimus animi et mollitia aut porro
+                          asperiores officiis. <br />
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Fugit laboriosam voluptatum cupiditate
+                          laudantium a, eaque atque, recusandae voluptatibus
+                          reiciendis fuga ullam dolorum! Totam eius cum nobis
+                          reprehenderit error accusamus molestias.
+                        </p>
+                      </div>
+                      <!-- <div class="action">
+                  <button>Book A Event</button>
+                </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text">
-            <div class="icon"></div>
-            <div class="titel">
-              <span>professional</span> <br />
-              Engineer Service
+        </div>
+
+        <!-- card  -->
+        <div>
+          <!-- main Atropos container (required), add your custom class here -->
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <!-- put your custom content here -->
+                </div>
+              </div>
             </div>
-            <div class="des">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem, mollitia? Facere provident praesentium magni tempore
-                ipsa quasi, a maxime? Ipsam aliquam quibusdam possimus animi et
-                mollitia aut porro asperiores officiis. <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                laboriosam voluptatum cupiditate laudantium a, eaque atque,
-                recusandae voluptatibus reiciendis fuga ullam dolorum! Totam
-                eius cum nobis reprehenderit error accusamus molestias.
-              </p>
-            </div>
-            <!-- <div class="action">
-                    <button>Book A Event</button>
-                  </div> -->
           </div>
         </div>
         <!-- card  -->
@@ -232,68 +355,309 @@
           <h1>My Professional Skills</h1>
         </div>
         <div class="card-Con">
-          <!-- card start -->
-          <div class="card">
-            <div class="icon">
-              <img src="./Hira/img/logo/ps.svg" alt="" />
-            </div>
-            <div class="name">
-              <p>PhotoShop</p>
-            </div>
-          </div>
-          <!-- card end  -->
-          <!-- card start -->
-          <div class="card">
-            <div class="icon">
-              <img src="./Hira/img/logo/ps.svg" alt="" />
-            </div>
-            <div class="name">
-              <p>PhotoShop</p>
-            </div>
-          </div>
-          <!-- card end  -->
-          <!-- card start -->
-          <div class="card">
-            <div class="icon">
-              <img src="./Hira/img/logo/ps.svg" alt="" />
-            </div>
-            <div class="name">
-              <p>PhotoShop</p>
-            </div>
-          </div>
-          <!-- card end  -->
-          <!-- card start -->
-          <div class="card">
-            <div class="icon">
-              <img src="./Hira/img/logo/ps.svg" alt="" />
-            </div>
-            <div class="name">
-              <p>PhotoShop</p>
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/ps.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p>PhotoShop</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- card end  -->
-          <!-- card start -->
-          <div class="card">
-            <div class="icon">
-              <img src="./Hira/img/logo/ps.svg" alt="" />
-            </div>
-            <div class="name">
-              <p>PhotoShop</p>
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/ai.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p>Illustrator</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- card end  -->
-          <div class="card">
-            <div class="icon">
-              <img src="./Hira/img/logo/ai.svg" alt="" />
-            </div>
-            <div class="name">
-              <p>Illustrator</p>
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/id.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p>Indesign</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/pr.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p>Premiere Pro</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/Microsoft_Office_icon__2019_.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p>Office</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/googleads.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p>Google Ads</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/meta-12361.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p style="padding-left: 5px">Meta marketing</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/wood (1).png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p style="padding-left: 5px">Woodward Toolkit</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/pngwing.com.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p style="padding-left: 5px">Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
+          <!-- card start  -->
+          <div class="cardcon">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner">
+                    <!-- put your custom content here -->
+                    <div class="card">
+                      <div class="icon">
+                        <img
+                          data-atropos-offset="-5"
+                          src="./Hira/img/logo/pngwing.com2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name">
+                        <p style="font-size: 25px">Cenematography</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end  -->
         </div>
       </div>
     </section>
 
     <script src="./Hira/js/main.js"></script>
+    <script>
+      document.querySelectorAll(".my-atropos").forEach((e) => {
+        const myAtropos = Atropos({
+          el: e,
+          // rest of parameters
+        });
+      });
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -127,4 +127,38 @@
   font-size: 20px;
   font-weight: 300;
   text-align: justify;
+}
+
+.portfolio {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+.portfolio .con {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+.portfolio .con .titel {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(20deg, rgb(182, 0, 182), rgb(10, 0, 10));
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.portfolio .con .project-con {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio .con .project-con .box {
+  width: 400px;
+  height: 200px;
+  position: relative;
 }/*# sourceMappingURL=about.css.map */

@@ -19,7 +19,26 @@
 ::-webkit-scrollbar-thumb {
   background-color: black;
 }
-
+nav {
+  width: 100%;
+  padding-top: 20px;
+  position: absolute;
+  top: 0px;
+  color: #fff;
+  z-index: 10900;
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: rgb(31, 31, 31);
+    &:hover {
+      background: #fff;
+      color: black;
+    }
+  }
+}
 header {
   width: 100%;
   position: relative;
@@ -28,9 +47,14 @@ header {
     background-color: #000;
     position: relative;
     height: 100vh;
+    overflow: hidden;
     img {
       height: 100%;
       float: right;
+      position: relative;
+      @media (max-width: 650px) {
+        left: 250px;
+      }
     }
   }
   .con {
@@ -65,6 +89,10 @@ header {
   bottom: 40px;
   left: 40px;
   z-index: 100;
+  @media (max-width: 650px) {
+    bottom: 25px;
+    left: 25px;
+  }
   .con {
     .lisks {
       ol {
@@ -75,7 +103,9 @@ header {
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-
+        @media (max-width: 650px) {
+          height: 160px;
+        }
         li {
           width: 40px;
           border: 2px solid #fff;
@@ -85,13 +115,19 @@ header {
           align-items: center;
           border-radius: 50%;
           transition: all 0.3s linear;
-
+          @media (max-width: 650px) {
+            width: 30px;
+            height: 30px;
+          }
           &:hover {
             background-color: #ffffff31;
           }
           a {
             color: #fff;
             font-size: 22px;
+            @media (max-width: 650px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -112,6 +148,9 @@ header {
     position: relative;
     .layout {
       display: flex;
+      @media (max-width: 650px) {
+        flex-direction: column;
+      }
       .img {
         flex: 1;
         width: 100%;
@@ -190,16 +229,23 @@ header {
       padding: 20px;
       padding-bottom: 40px;
     }
+    .m {
+      margin-bottom: 30px;
+    }
+    .atropos-rotate {
+      border-radius: 10px;
+      overflow: hidden;
+    }
     .card {
-      width: 80%;
+      width: 100%;
       height: 400px;
       background-color: #0c0c0c;
-      margin: auto;
+      // margin: auto;
       border-radius: 10px;
       overflow: hidden;
       position: relative;
       box-shadow: 0 0 100px #242424;
-      margin-bottom: 100px;
+      // margin-bottom: 100px;
       .img {
         height: 100%;
         float: right;
@@ -224,6 +270,9 @@ header {
         width: 100%;
         height: 100%;
         padding: 20px;
+        @media (max-width: 650px) {
+          padding: 10px;
+        }
         .icon {
           font-size: 30px;
         }
@@ -233,6 +282,10 @@ header {
           font-weight: 700;
           padding-left: 40px;
           padding-top: 30px;
+          @media (max-width: 650px) {
+            font-size: 30px;
+            padding-left: 10px;
+          }
           span {
             font-size: 25px;
             font-family: "Dancing Script", cursive;
@@ -244,23 +297,28 @@ header {
         .des {
           padding-left: 40px;
           padding-top: 10px;
+          @media (max-width: 650px) {
+            padding-left: 10px;
+          }
           p {
             width: 60%;
             text-align: justify;
+            @media (max-width: 650px) {
+              width: 100%;
+            }
           }
         }
       }
     }
     .card2 {
-      width: 80%;
+      width: 100%;
       height: 400px;
       background-color: #0c0c0c;
-      margin: auto;
       border-radius: 10px;
       overflow: hidden;
       position: relative;
       box-shadow: 0 0 100px #242424;
-      margin-bottom: 100px;
+
       .img {
         height: 100%;
         float: left;
@@ -286,6 +344,9 @@ header {
         height: 100%;
         padding: 20px;
         text-align: right;
+        @media (max-width: 650px) {
+          padding: 10px;
+        }
         .icon {
           font-size: 30px;
         }
@@ -295,6 +356,9 @@ header {
           font-weight: 700;
           padding-left: 40px;
           padding-top: 30px;
+          @media (max-width: 650px) {
+            font-size: 30px;
+          }
           span {
             font-size: 25px;
             font-family: "Dancing Script", cursive;
@@ -306,10 +370,16 @@ header {
         .des {
           padding-left: 40px;
           padding-top: 10px;
+          @media (max-width: 650px) {
+            padding-left: 10px;
+          }
           p {
             width: 60%;
             float: right;
             text-align: justify;
+            @media (max-width: 650px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -331,14 +401,32 @@ header {
       text-align: center;
       padding: 20px;
       font-size: 50px;
+      @media (max-width: 650px) {
+        font-size: 30px;
+      }
     }
     .card-Con {
       position: relative;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      .card {
+      padding: 10px;
+      .cardcon {
+        width: 200px;
+        height: 80px;
+        position: relative;
         margin: 10px;
+        @media (max-width: 650px) {
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .atropos-rotate {
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .card {
         width: 200px;
         height: 80px;
         position: relative;
@@ -346,6 +434,9 @@ header {
         overflow: hidden;
         background: #242424;
         cursor: pointer;
+        @media (max-width: 650px) {
+          width: 100%;
+        }
         .icon {
           position: absolute;
           height: 100%;

@@ -5,6 +5,14 @@ const ballon = document.querySelector("#ballon");
 const front = document.querySelector("#front");
 
 
+
+const scroll = document.querySelector("#scroll");
+
+scroll.addEventListener("click",()=>{
+  const y = screenY;
+  window.scrollTo(0,y + 800)
+ 
+})
 window.addEventListener("scroll",(e)=>{
     
     img2.style =`transform:translateY(${this.scrollY/2}px) scale(${this.scrollY/5+100}%);`
@@ -68,3 +76,15 @@ const observer = new IntersectionObserver(entries => {
 
   balonAnimation2.to(".AnimBalon2",{x:-500,y:400 , rotation: 20, duration:10})
   .to(".AnimBalon2",{x:-310, y:500,rotation:1,duration:6})
+
+
+  const scroll2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#scroll",
+        // markers:true,
+        start:"top 80%",
+        end:"top -40%",
+        scrub:true
+    }
+  })
+  scroll2.to("#scroll",{opacity:0})

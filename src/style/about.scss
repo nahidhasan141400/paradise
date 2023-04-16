@@ -159,3 +159,36 @@
     }
   }
 }
+
+.portfolio {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  .con {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    .titel {
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 800;
+      background: linear-gradient(20deg, rgb(182, 0, 182), rgb(10, 0, 10));
+      color: transparent;
+      background-clip: text;
+    }
+    .project-con {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .box {
+        width: 400px;
+        height: 200px;
+        position: relative;
+      }
+    }
+  }
+}
