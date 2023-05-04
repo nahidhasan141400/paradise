@@ -35,7 +35,15 @@ header {
       top: 20px;
       left: -100px;
       font-size: 400px;
+      transition: all 0.7s;
       color: #0000000a;
+      @media (max-width: 700px) {
+        font-size: 350px;
+        transition: all 0.7s;
+      }
+      @media (max-width: 500px) {
+        font-size: 250px;
+      }
     }
     .scroll {
       position: absolute;
@@ -80,19 +88,43 @@ header {
     }
     .text {
       width: 100%;
-      flex: 2;
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 3;
+      background-color: #68323228;
+      position: absolute;
+      filter: drop-shadow(0 0 20px #fff);
+      left: 0;
+      top: 0;
+      height: 100%;
+      @media (max-width: 449px) {
+        align-items: flex-end;
+        padding-bottom: 30px;
+      }
       .text-con {
         position: relative;
         h1 {
+          transition: all 0.7s;
           font-size: 150px;
+          @media (max-width: 1000px) {
+            font-size: 100px;
+          }
+          @media (max-width: 610px) {
+            font-size: 70px;
+          }
+          @media (max-width: 449px) {
+            font-size: 50px;
+          }
         }
         p {
           font-size: 55px;
           position: relative;
           top: -40px;
+          @media (max-width: 610px) {
+            font-size: 30px;
+            top: -7px;
+          }
         }
         ol {
           display: flex;
@@ -118,15 +150,23 @@ header {
       }
     }
     .img_con {
-      flex: 1;
       width: 100%;
       height: 100%;
+      transition: all 0.7s;
       position: relative;
+      @media (max-width: 600px) {
+        position: absolute;
+      }
       img {
         height: 90%;
         position: absolute;
         bottom: 0;
         right: 200px;
+        @media (max-width: 700px) {
+          height: auto;
+          width: 100%;
+          right: 0px;
+        }
       }
     }
   }
@@ -167,6 +207,11 @@ main {
       font-size: 40px;
       margin-top: 20px;
       padding: 10px 0px;
+      position: relative;
+      z-index: 30;
+      @media (max-width: 440px) {
+        font-size: 35px;
+      }
     }
     p {
       text-align: justify;
@@ -186,6 +231,7 @@ main {
 
 .Goals {
   width: 100%;
+  padding: 10px;
   position: relative;
   background: #fffcf6;
   padding-top: 100px;
@@ -218,11 +264,19 @@ main {
     margin: auto;
     position: relative;
     height: 500px;
+    @media (max-width: 870px) {
+      height: auto;
+      padding-bottom: 20px;
+    }
     .layout {
       position: relative;
       height: 100%;
       width: 100%;
+      transition: all 0.7s;
       display: flex;
+      @media (max-width: 870px) {
+        flex-direction: column;
+      }
       .img-con {
         flex: 1;
         width: 100%;
@@ -309,6 +363,8 @@ main {
         width: 100%;
         height: 100%;
         display: flex;
+        z-index: 10;
+        position: relative;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -316,7 +372,16 @@ main {
         h1 {
           font-size: 50px;
           width: 100%;
-          padding: 10px 0;
+          padding: 10px 5px;
+          @media (max-width: 870px) {
+            text-align: center;
+          }
+          @media (max-width: 550px) {
+            font-size: 40px;
+          }
+          @media (max-width: 450px) {
+            font-size: 35px;
+          }
         }
       }
     }
@@ -336,19 +401,47 @@ main {
     padding-top: 10px;
     .titel {
       width: 100%;
+      transition: all 0.7s;
       display: flex;
+      @media (max-width: 750px) {
+        flex-direction: column-reverse;
+      }
       .t {
         h1 {
           font-size: 90px;
           height: 250px;
           border-left: 5px solid rgb(136, 255, 0);
+          transition: all 0.7s;
           padding-left: 10px;
+          @media (max-width: 1090px) {
+            font-size: 70px;
+          }
+          @media (max-width: 500px) {
+            font-size: 65px;
+          }
+          @media (max-width: 400px) {
+            font-size: 40px;
+          }
+          @media (max-width: 750px) {
+            height: auto;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+          }
+        }
+        @media (max-width: 950px) {
+          font-size: 60px;
+          transition: all 0.7s;
+        }
+        @media (max-width: 750px) {
+          font-size: 50px;
         }
       }
       .des {
         padding-right: 10px;
         display: flex;
         align-items: center;
+        text-align: justify;
+        padding-left: 10px;
       }
     }
     .excard {
@@ -370,17 +463,45 @@ main {
           height: 100%;
           width: 100%;
           position: relative;
-          h1 {
+          left: -35px;
+          a {
             font-size: 40px;
+            text-decoration: none;
+            color: #000;
+            @media (max-width: 1000px) {
+              font-size: 35px;
+            }
+            @media (max-width: 910px) {
+              font-size: 27px;
+            }
+            @media (max-width: 840px) {
+              font-size: 25px;
+            }
+            @media (max-width: 750px) {
+              font-size: 35px;
+            }
+            @media (max-width: 510px) {
+              font-size: 30px;
+            }
+            @media (max-width: 410px) {
+              font-size: 27px;
+            }
           }
           p {
             font-size: 20px;
             color: rgb(49, 49, 49);
+            @media (max-width: 520px) {
+              font-size: 16px;
+            }
           }
         }
         .img {
           height: 100%;
+          transition: all 0.7s;
           position: relative;
+          @media (max-width: 750px) {
+            display: none;
+          }
           img {
             height: 100%;
             width: calc(100vh / 2);
@@ -434,6 +555,12 @@ main {
       height: 100%;
       img {
         height: 100%;
+        width: 100%;
+        object-fit: contain;
+        transition: all 0.7s;
+        @media (max-width: 850px) {
+          opacity: 0.5;
+        }
       }
     }
     .text {
@@ -444,6 +571,11 @@ main {
       flex-direction: column;
       justify-content: center;
       padding-left: 300px;
+      transition: all 0.7s;
+      padding-right: 20px;
+      @media (max-width: 850px) {
+        padding-left: 20px;
+      }
       h1 {
         font-size: 50px;
       }
@@ -454,23 +586,68 @@ main {
 .skils {
   width: 100%;
   position: relative;
+  background: #fffcf6;
   height: 400px;
+  padding: 10px;
   .con {
     width: 100%;
     height: 100%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     .text {
-      position: relative;
+      flex: 2;
+      width: 100%;
+      .titel {
+        font-size: 50px;
+        font-weight: 700;
+        padding-bottom: 5px;
+      }
+      .des {
+        text-align: justify;
+        padding-right: 20px;
+      }
     }
     .img {
-      height: 100%;
-      position: absolute;
+      flex: 1;
+      width: 100%;
+      position: relative;
       img {
-        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.service {
+  width: 100%;
+  position: relative;
+  background-color: #fffcf6;
+  .con {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .titel {
+      padding-top: 60px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .cardCon {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 25px;
+      .card {
+        width: 350px;
+        height: 400px;
+        background: #ffeade;
+        margin: 10px;
       }
     }
   }

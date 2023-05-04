@@ -32,7 +32,19 @@ header .con .bg {
   top: 20px;
   left: -100px;
   font-size: 400px;
+  transition: all 0.7s;
   color: rgba(0, 0, 0, 0.0392156863);
+}
+@media (max-width: 700px) {
+  header .con .bg {
+    font-size: 350px;
+    transition: all 0.7s;
+  }
+}
+@media (max-width: 500px) {
+  header .con .bg {
+    font-size: 250px;
+  }
 }
 header .con .scroll {
   position: absolute;
@@ -75,21 +87,55 @@ header .con .scroll .con-s .mouse .tip {
 }
 header .con .text {
   width: 100%;
-  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
+  background-color: rgba(104, 50, 50, 0.1568627451);
+  position: absolute;
+  filter: drop-shadow(0 0 20px #fff);
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+@media (max-width: 449px) {
+  header .con .text {
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
 }
 header .con .text .text-con {
   position: relative;
 }
 header .con .text .text-con h1 {
+  transition: all 0.7s;
   font-size: 150px;
+}
+@media (max-width: 1000px) {
+  header .con .text .text-con h1 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 610px) {
+  header .con .text .text-con h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 449px) {
+  header .con .text .text-con h1 {
+    font-size: 50px;
+  }
 }
 header .con .text .text-con p {
   font-size: 55px;
   position: relative;
   top: -40px;
+}
+@media (max-width: 610px) {
+  header .con .text .text-con p {
+    font-size: 30px;
+    top: -7px;
+  }
 }
 header .con .text .text-con ol {
   display: flex;
@@ -113,16 +159,28 @@ header .con .text .text-con ol li a {
   color: black;
 }
 header .con .img_con {
-  flex: 1;
   width: 100%;
   height: 100%;
+  transition: all 0.7s;
   position: relative;
+}
+@media (max-width: 600px) {
+  header .con .img_con {
+    position: absolute;
+  }
 }
 header .con .img_con img {
   height: 90%;
   position: absolute;
   bottom: 0;
   right: 200px;
+}
+@media (max-width: 700px) {
+  header .con .img_con img {
+    height: auto;
+    width: 100%;
+    right: 0px;
+  }
 }
 
 main {
@@ -162,6 +220,13 @@ main .con h1 {
   font-size: 40px;
   margin-top: 20px;
   padding: 10px 0px;
+  position: relative;
+  z-index: 30;
+}
+@media (max-width: 440px) {
+  main .con h1 {
+    font-size: 35px;
+  }
 }
 main .con p {
   text-align: justify;
@@ -180,6 +245,7 @@ main .con p br {
 
 .Goals {
   width: 100%;
+  padding: 10px;
   position: relative;
   background: #fffcf6;
   padding-top: 100px;
@@ -212,11 +278,23 @@ main .con p br {
   position: relative;
   height: 500px;
 }
+@media (max-width: 870px) {
+  .Goals .con {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
 .Goals .con .layout {
   position: relative;
   height: 100%;
   width: 100%;
+  transition: all 0.7s;
   display: flex;
+}
+@media (max-width: 870px) {
+  .Goals .con .layout {
+    flex-direction: column;
+  }
 }
 .Goals .con .layout .img-con {
   flex: 1;
@@ -299,6 +377,8 @@ main .con p br {
   width: 100%;
   height: 100%;
   display: flex;
+  z-index: 10;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -308,7 +388,22 @@ main .con p br {
 .Goals .con .layout .text-con h1 {
   font-size: 50px;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 5px;
+}
+@media (max-width: 870px) {
+  .Goals .con .layout .text-con h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .Goals .con .layout .text-con h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .Goals .con .layout .text-con h1 {
+    font-size: 35px;
+  }
 }
 
 .experiance {
@@ -326,18 +421,60 @@ main .con p br {
 }
 .experiance .con .titel {
   width: 100%;
+  transition: all 0.7s;
   display: flex;
+}
+@media (max-width: 750px) {
+  .experiance .con .titel {
+    flex-direction: column-reverse;
+  }
 }
 .experiance .con .titel .t h1 {
   font-size: 90px;
   height: 250px;
   border-left: 5px solid rgb(136, 255, 0);
+  transition: all 0.7s;
   padding-left: 10px;
+}
+@media (max-width: 1090px) {
+  .experiance .con .titel .t h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .experiance .con .titel .t h1 {
+    font-size: 65px;
+  }
+}
+@media (max-width: 400px) {
+  .experiance .con .titel .t h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .experiance .con .titel .t h1 {
+    height: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 950px) {
+  .experiance .con .titel .t {
+    font-size: 60px;
+    transition: all 0.7s;
+  }
+}
+@media (max-width: 750px) {
+  .experiance .con .titel .t {
+    font-size: 50px;
+  }
 }
 .experiance .con .titel .des {
   padding-right: 10px;
   display: flex;
   align-items: center;
+  text-align: justify;
+  padding-left: 10px;
 }
 .experiance .con .excard {
   width: 100%;
@@ -360,17 +497,61 @@ main .con p br {
   height: 100%;
   width: 100%;
   position: relative;
+  left: -35px;
 }
-.experiance .con .excard .card .name h1 {
+.experiance .con .excard .card .name a {
   font-size: 40px;
+  text-decoration: none;
+  color: #000;
+}
+@media (max-width: 1000px) {
+  .experiance .con .excard .card .name a {
+    font-size: 35px;
+  }
+}
+@media (max-width: 910px) {
+  .experiance .con .excard .card .name a {
+    font-size: 27px;
+  }
+}
+@media (max-width: 840px) {
+  .experiance .con .excard .card .name a {
+    font-size: 25px;
+  }
+}
+@media (max-width: 750px) {
+  .experiance .con .excard .card .name a {
+    font-size: 35px;
+  }
+}
+@media (max-width: 510px) {
+  .experiance .con .excard .card .name a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 410px) {
+  .experiance .con .excard .card .name a {
+    font-size: 27px;
+  }
 }
 .experiance .con .excard .card .name p {
   font-size: 20px;
   color: rgb(49, 49, 49);
 }
+@media (max-width: 520px) {
+  .experiance .con .excard .card .name p {
+    font-size: 16px;
+  }
+}
 .experiance .con .excard .card .img {
   height: 100%;
+  transition: all 0.7s;
   position: relative;
+}
+@media (max-width: 750px) {
+  .experiance .con .excard .card .img {
+    display: none;
+  }
 }
 .experiance .con .excard .card .img img {
   height: 100%;
@@ -427,6 +608,15 @@ main .con p br {
 }
 .Network .con .img img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.7s;
+}
+@media (max-width: 850px) {
+  .Network .con .img img {
+    opacity: 0.5;
+  }
 }
 .Network .con .text {
   width: 100%;
@@ -436,6 +626,13 @@ main .con p br {
   flex-direction: column;
   justify-content: center;
   padding-left: 300px;
+  transition: all 0.7s;
+  padding-right: 20px;
+}
+@media (max-width: 850px) {
+  .Network .con .text {
+    padding-left: 20px;
+  }
 }
 .Network .con .text h1 {
   font-size: 50px;
@@ -444,24 +641,69 @@ main .con p br {
 .skils {
   width: 100%;
   position: relative;
+  background: #fffcf6;
   height: 400px;
+  padding: 10px;
 }
 .skils .con {
   width: 100%;
   height: 100%;
   max-width: 1200px;
   margin: auto;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .skils .con .text {
-  position: relative;
+  flex: 2;
+  width: 100%;
+}
+.skils .con .text .titel {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.skils .con .text .des {
+  text-align: justify;
+  padding-right: 20px;
 }
 .skils .con .img {
-  height: 100%;
-  position: absolute;
+  flex: 1;
+  width: 100%;
+  position: relative;
 }
 .skils .con .img img {
-  height: 100%;
+  width: 100%;
+}
+
+.service {
+  width: 100%;
+  position: relative;
+  background-color: #fffcf6;
+}
+.service .con {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.service .con .titel {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.service .con .cardCon {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.service .con .cardCon .card {
+  width: 350px;
+  height: 400px;
+  background: #ffeade;
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */
