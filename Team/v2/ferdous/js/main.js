@@ -86,3 +86,26 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
         .typeString("Entrepreneur")
         .pauseFor(5000)
         .start();
+
+
+        var app2 = document.getElementById("type2");
+
+        var typewriter2 = new Typewriter(app2, {
+          loop: true,
+          delay: 100,
+        });
+  
+        typewriter2
+          .pauseFor(200)
+          .typeString("Entrepreneur")
+          .pauseFor(1200)
+          .deleteChars(13)
+          .typeString("Business man")
+          .pauseFor(1200)
+          .deleteChars(13)
+          .typeString("Marketer")
+          .pauseFor(1200)
+          .deleteChars(9)
+          .typeString("Entrepreneur")
+          .pauseFor(5000)
+          .start();

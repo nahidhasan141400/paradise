@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 * {
   margin: 0;
@@ -56,6 +57,9 @@ body {
     rgba(173, 0, 171, 1) 0%,
     rgba(15, 51, 92, 1) 90%
   );
+  @media (max-width:690px) {
+    display: none;
+  }
   .con {
     width: 100%;
     // max-width: 1300px;
@@ -86,6 +90,12 @@ body {
           margin: 10px;
           width: auto;
           height: auto;
+          @media (max-width:1055px) {
+            left: 0px;           
+          }
+          @media (max-width:775px) {
+            left: -20px;           
+          }
           a {
             color: #fff;
             text-decoration: none;
@@ -103,6 +113,14 @@ body {
       img {
         width: 80%;
         position: relative;
+        @media (max-width:1055px) {
+          width: 100%; 
+          left: -20px;        
+        }
+        @media (max-width:775px) {
+          width: 110%; 
+          left: -40px;              
+        }
       }
     }
     .text {
@@ -118,7 +136,9 @@ body {
         margin-bottom: 50px;
         color: #fff;
         position: relative;
-       
+        @media (max-width:974px) {
+          margin-bottom: 20px;
+        }
         &::after {
           content: "";
           width: 250px;
@@ -127,17 +147,17 @@ body {
           position: absolute;
           top: 0;
           left: 0;
+          @media (max-width:974px) {
+            width: 170px;
+          }
         }
         h1 {
           font-size: 50px;
           @media (min-width:1550px) {
             font-size: 100px;
           }
-        }
-        p {
-          font-size: 20px;
-          @media (min-width:1560px) {
-            font-size: 60px;
+          @media (max-width:974px) {
+            font-size: 35px;
           }
         }
       }
@@ -200,6 +220,125 @@ body {
           }
         }
       }
+    }
+  }
+}
+// hero2 
+.hero2{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: none;
+  overflow-y: auto;
+  background-image: radial-gradient(
+    circle farthest-corner at 83.7% 4.3%,
+    rgba(173, 0, 171, 1) 0%,
+    rgba(15, 51, 92, 1) 90%
+  );
+  @media (max-width:690px) {
+    display: block;
+
+  }
+  .con{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .img{
+      width: 50%;
+      position: relative;
+      @media (max-width:430px) {
+        width: 70%;
+      }
+      @media (max-width:330px) {
+        width: 80%;
+      }
+      img{
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .name{
+      width: 100%;
+      text-align: center;
+      color:#fff;
+      h1{
+        font-size: 30px;
+        font-family: 'Kaushan Script', cursive;
+        transform: rotate(-7deg);
+        padding: 12px 0;
+        position: relative;
+        &::after{
+          content: "";
+          width: 30px;
+          height: 3px;
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          left: 22%;
+          display: inline-block;
+          @media (max-width:380px) {
+            left: 17%;
+          }
+          @media (max-width:330px) {
+            left: 15%;
+          }
+        }
+        &::before{
+          content: "";
+          width: 30px;
+          height: 3px;
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          right: 22%;
+          display: inline-block;
+          @media (max-width:380px) {
+            right: 17%;
+          }
+          @media (max-width:330px) {
+            right: 15%;
+          }
+        }
+      }
+      p{
+        font-size: 17px;
+        font-weight: 200;
+      }
+    }
+    .link{
+      width: 100%;
+      ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li{
+          padding: 5px;
+          a{
+            font-size: 30px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .info{
+    width: 100%;
+    text-align: center;
+    h2{
+      font-size: 24px;
+      color: #fff;
+      padding: 10px 0;
+    }
+    p{
+      text-align: justify;
+      padding: 5px;
+      color: #fff;
+      font-size: 15px;
     }
   }
 }

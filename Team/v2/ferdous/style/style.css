@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +52,11 @@ body {
   position: relative;
   background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%, rgb(173, 0, 171) 0%, rgb(15, 51, 92) 90%);
 }
+@media (max-width: 690px) {
+  .hero {
+    display: none;
+  }
+}
 .hero .con {
   width: 100%;
   min-height: 100vh;
@@ -86,6 +92,16 @@ body {
   width: auto;
   height: auto;
 }
+@media (max-width: 1055px) {
+  .hero .con nav ul li {
+    left: 0px;
+  }
+}
+@media (max-width: 775px) {
+  .hero .con nav ul li {
+    left: -20px;
+  }
+}
 .hero .con nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -102,6 +118,18 @@ body {
   width: 80%;
   position: relative;
 }
+@media (max-width: 1055px) {
+  .hero .con .img img {
+    width: 100%;
+    left: -20px;
+  }
+}
+@media (max-width: 775px) {
+  .hero .con .img img {
+    width: 110%;
+    left: -40px;
+  }
+}
 .hero .con .text {
   width: 100%;
   display: flex;
@@ -116,6 +144,11 @@ body {
   color: #fff;
   position: relative;
 }
+@media (max-width: 974px) {
+  .hero .con .text .name {
+    margin-bottom: 20px;
+  }
+}
 .hero .con .text .name::after {
   content: "";
   width: 250px;
@@ -125,6 +158,11 @@ body {
   top: 0;
   left: 0;
 }
+@media (max-width: 974px) {
+  .hero .con .text .name::after {
+    width: 170px;
+  }
+}
 .hero .con .text .name h1 {
   font-size: 50px;
 }
@@ -133,12 +171,9 @@ body {
     font-size: 100px;
   }
 }
-.hero .con .text .name p {
-  font-size: 20px;
-}
-@media (min-width: 1560px) {
-  .hero .con .text .name p {
-    font-size: 60px;
+@media (max-width: 974px) {
+  .hero .con .text .name h1 {
+    font-size: 35px;
   }
 }
 .hero .con .text .des {
@@ -198,6 +233,134 @@ body {
   height: 300px;
   width: 300px;
   background-color: red;
+}
+
+.hero2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: none;
+  overflow-y: auto;
+  background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%, rgb(173, 0, 171) 0%, rgb(15, 51, 92) 90%);
+}
+@media (max-width: 690px) {
+  .hero2 {
+    display: block;
+  }
+}
+.hero2 .con {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero2 .con .img {
+  width: 50%;
+  position: relative;
+}
+@media (max-width: 430px) {
+  .hero2 .con .img {
+    width: 70%;
+  }
+}
+@media (max-width: 330px) {
+  .hero2 .con .img {
+    width: 80%;
+  }
+}
+.hero2 .con .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.hero2 .con .name {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.hero2 .con .name h1 {
+  font-size: 30px;
+  font-family: "Kaushan Script", cursive;
+  transform: rotate(-7deg);
+  padding: 12px 0;
+  position: relative;
+}
+.hero2 .con .name h1::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  display: inline-block;
+}
+@media (max-width: 380px) {
+  .hero2 .con .name h1::after {
+    left: 17%;
+  }
+}
+@media (max-width: 330px) {
+  .hero2 .con .name h1::after {
+    left: 15%;
+  }
+}
+.hero2 .con .name h1::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 22%;
+  display: inline-block;
+}
+@media (max-width: 380px) {
+  .hero2 .con .name h1::before {
+    right: 17%;
+  }
+}
+@media (max-width: 330px) {
+  .hero2 .con .name h1::before {
+    right: 15%;
+  }
+}
+.hero2 .con .name p {
+  font-size: 17px;
+  font-weight: 200;
+}
+.hero2 .con .link {
+  width: 100%;
+}
+.hero2 .con .link ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.hero2 .con .link ul li {
+  padding: 5px;
+}
+.hero2 .con .link ul li a {
+  font-size: 30px;
+  color: #fff;
+}
+.hero2 .info {
+  width: 100%;
+  text-align: center;
+}
+.hero2 .info h2 {
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 0;
+}
+.hero2 .info p {
+  text-align: justify;
+  padding: 5px;
+  color: #fff;
+  font-size: 15px;
 }
 
 .expp {
