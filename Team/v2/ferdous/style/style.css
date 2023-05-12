@@ -176,6 +176,9 @@ body {
     font-size: 35px;
   }
 }
+.hero .con .text .name p {
+  font-size: 30px;
+}
 .hero .con .text .des {
   color: #e6e6e6;
   font-weight: 200;
