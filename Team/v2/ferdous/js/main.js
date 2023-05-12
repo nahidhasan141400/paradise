@@ -9,9 +9,9 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
         speed: 1000,
 
         // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
 
         // // Navigation arrows
         navigation: {
