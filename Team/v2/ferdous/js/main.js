@@ -48,6 +48,39 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
         })
       });
 
+
+      const expego = document.getElementById("expego");
+      expego.addEventListener("click",()=>{
+        next.click()
+      })
+      const award = document.getElementById("award");
+
+      award.addEventListener("click",()=>{
+        [1,2].forEach((e)=>{
+          next.click()
+        },1500)
+      })
+
+
+      const Network = document.getElementById("Network");
+
+      Network.addEventListener("click",()=>{
+        [1,2,3].forEach((e)=>{
+          next.click()
+        },1500)
+      });
+
+
+      const Contact = document.getElementById("Contact");
+
+      Contact.addEventListener("click",()=>{
+        [1,2,3,4].forEach((e)=>{
+          next.click()
+        },1500)
+      });
+
+
+
       const cursor = document.getElementById("cursor");
 
       document.addEventListener("mouseover",(e)=>{
@@ -59,8 +92,8 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
       })
 
       const move = (x,y)=>{
-        cursor.style.left = x + 2 +"px";
-            cursor.style.top = y + 2 +"px";
+        cursor.style.left = x + 4 +"px";
+            cursor.style.top = y + 4 +"px";
         
       }
 

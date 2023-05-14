@@ -9,7 +9,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
+.heroabout{
+  width: 100%;
+  position: relative;
+  height: 50vh;
+  @media (max-width:730px) {
+    height: 40vh;
+  }
+}
 .aboutHero {
   z-index: 3;
   display: flex;
@@ -18,6 +26,10 @@
   margin: auto;
   position: relative;
   height: 400px;
+  @media (max-width:730px) {
+    flex-direction: column;
+    height: 100vh; 
+  }
   .text {
     flex: 2;
     width: 100%;
@@ -25,15 +37,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 20px;
+    @media (max-width:730px) {
+      top: -150px;
+    }
     h1 {
       font-size: 45px;
       color: purple;
       padding: 20px;
+      @media (max-width:730px) {
+        text-align: center;
+        font: 35px;
+      }
     }
     p {
       font-size: 16px;
       font-weight: 300;
       text-align: justify;
+
     }
   }
   .img {
@@ -41,18 +63,37 @@
     width: 100%;
     position: relative;
     .img1 {
-      width: 500px;
+      width: 240px;
       position: absolute;
-      top: 100px;
-      right: -70px;
+      top: 220px;
+      right: 100px;
       transform: rotate(30deg);
+      
+      
+      @media (max-width:850px) {
+        width: 200px;
+      }
+      @media (max-width:730px) {
+        display: none;
+      }
     }
     .img2 {
-      width: 300px;
+      width: 170px;
       position: absolute;
       top: -100px;
-      right: -100px;
+      right: 40px;
       transform: rotate(-20deg);
+      @media (max-width:1037px) {
+        width: 150px;
+        right: 180px;
+        top: -80px;
+      }
+      @media (max-width:730px) {
+        top: 0;
+        right: 0;
+        display: none;
+       position: relative; 
+      }
     }
   }
 }
@@ -127,6 +168,7 @@
     left: -300px;
     top: -300px;
     border: 60px solid purple;
+    z-index: -1;
   }
   .con {
     width: 100%;

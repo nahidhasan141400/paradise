@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+.heroabout {
+  width: 100%;
+  position: relative;
+  height: 50vh;
+}
+@media (max-width: 730px) {
+  .heroabout {
+    height: 40vh;
+  }
+}
+
 .aboutHero {
   z-index: 3;
   display: flex;
@@ -15,6 +26,12 @@
   position: relative;
   height: 400px;
 }
+@media (max-width: 730px) {
+  .aboutHero {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
 .aboutHero .text {
   flex: 2;
   width: 100%;
@@ -22,11 +39,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding: 20px;
+}
+@media (max-width: 730px) {
+  .aboutHero .text {
+    top: -150px;
+  }
 }
 .aboutHero .text h1 {
   font-size: 45px;
   color: purple;
   padding: 20px;
+}
+@media (max-width: 730px) {
+  .aboutHero .text h1 {
+    text-align: center;
+    font: 35px;
+  }
 }
 .aboutHero .text p {
   font-size: 16px;
@@ -39,18 +69,43 @@
   position: relative;
 }
 .aboutHero .img .img1 {
-  width: 500px;
+  width: 240px;
   position: absolute;
-  top: 100px;
-  right: -70px;
+  top: 220px;
+  right: 100px;
   transform: rotate(30deg);
 }
+@media (max-width: 850px) {
+  .aboutHero .img .img1 {
+    width: 200px;
+  }
+}
+@media (max-width: 730px) {
+  .aboutHero .img .img1 {
+    display: none;
+  }
+}
 .aboutHero .img .img2 {
-  width: 300px;
+  width: 170px;
   position: absolute;
   top: -100px;
-  right: -100px;
+  right: 40px;
   transform: rotate(-20deg);
+}
+@media (max-width: 1037px) {
+  .aboutHero .img .img2 {
+    width: 150px;
+    right: 180px;
+    top: -80px;
+  }
+}
+@media (max-width: 730px) {
+  .aboutHero .img .img2 {
+    top: 0;
+    right: 0;
+    display: none;
+    position: relative;
+  }
 }
 
 .aboutus {
@@ -95,6 +150,7 @@
   left: -300px;
   top: -300px;
   border: 60px solid purple;
+  z-index: -1;
 }
 .why .con {
   width: 100%;

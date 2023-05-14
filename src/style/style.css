@@ -83,6 +83,7 @@ body {
   position: relative;
   background-color: #0a001a;
   z-index: 2;
+  top: -100px;
 }
 .name .intro {
   width: 100%;
@@ -546,12 +547,21 @@ nav ol li a i {
   color: white;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .servicePage .header .titel {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 .servicePage .header .titel .hi {
   color: #ac78ff;
 }
 .servicePage .marketing {
   width: 100%;
   position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+  padding: 10px;
 }
 .servicePage .marketing .con {
   width: 100%;
@@ -579,10 +589,15 @@ nav ol li a i {
   background-color: #3a1c6b;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .servicePage .marketing .con .cardCon .card {
+    width: 380px;
+  }
+}
 .servicePage .marketing .con .cardCon .card .num {
   position: absolute;
   font-size: 200px;
-  color: rgba(16, 4, 36, 0.1176470588);
+  color: rgba(34, 19, 63, 0.2352941176);
   top: -20px;
   left: -80px;
   z-index: 0;

@@ -1385,4 +1385,132 @@ input[type="text"] {
   opacity: 0;
 }
 
+
+.expp {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 221, 214) 0%, rgb(51, 102, 255) 90%);
+}
+.expp .con {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+}
+@media (max-width: 750px) {
+  .expp .con {
+    display: block;
+    padding-top: 60px;
+  }
+}
+.expp .con .titel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.expp .con .titel p {
+  position: absolute;
+  font-size: 60px;
+  left: -120px;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  font-weight: 600;
+  text-shadow: 2px 2px 0px rgba(255, 207, 103, 0.156), 3px 4px 10px rgba(255, 255, 255, 0.463);
+  color: #434344;
+}
+@media (max-width: 750px) {
+  .expp .con .titel p {
+    position: relative;
+    transform: rotate(0deg);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.expp .con .body {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+@media (max-width: 750px) {
+  .expp .con .body {
+    padding-left: 10px;
+  }
+}
+.expp .con .body .cardCon {
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1000px) {
+  .expp .con .body .cardCon {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .expp .con .body .cardCon {
+    grid-template-columns: 1fr;
+  }
+}
+.expp .con .body .cardCon .card {
+  width: 100%;
+  padding-left: 20px;
+  position: relative;
+  margin: 20px 10px;
+  border-left: 1px solid purple;
+}
+.expp .con .body .cardCon .card::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #6a41da;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+.expp .con .body .cardCon .card::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #d5efff;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  z-index: 2;
+}
+.expp .con .body .cardCon .card h1 {
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+}
+.expp .con .body .cardCon .card h1 a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s linear;
+}
+.expp .con .body .cardCon .card h1 a:hover {
+  color: #343434;
+}
+.expp .con .body .cardCon .card .pos {
+  font-size: 17px;
+}
+.expp .con .body .cardCon .card .date {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+
 /*# sourceMappingURL=style.css.map */
