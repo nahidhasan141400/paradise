@@ -56,7 +56,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
       const award = document.getElementById("award");
 
       award.addEventListener("click",()=>{
-        [1,2].forEach((e)=>{
+        [1,2,3,4,5].forEach((e)=>{
           next.click()
         },1500)
       })
@@ -65,7 +65,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
       const Network = document.getElementById("Network");
 
       Network.addEventListener("click",()=>{
-        [1,2,3].forEach((e)=>{
+        [1,2,3,4].forEach((e)=>{
           next.click()
         },1500)
       });
@@ -74,7 +74,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
       const Contact = document.getElementById("Contact");
 
       Contact.addEventListener("click",()=>{
-        [1,2,3,4].forEach((e)=>{
+        [1,2,3,4,5,6].forEach((e)=>{
           next.click()
         },1500)
       });

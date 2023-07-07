@@ -30,6 +30,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="../ferdous/style/style.css">
 
 	<!-- Modernizr JS -->
 	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
@@ -49,6 +50,13 @@
 	<div class="fh5co-loader"></div>
 
 
+     <!-- nab btn start  -->
+     <div class="nabbtn">
+		<div class="btng">
+		  <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+		  <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+		</div>
+	  </div>
 
 
 	<div id="page">
@@ -200,6 +208,8 @@
 						</div>
 					  </section>			
 				</div>
+
+				<!-- v2 -->
 				<!-- slider  -->
 				<div class="swiper-slide">
 					<div style="height: 100%;overflow-y: auto;" id="fh5co-features" class="animate-box">
@@ -293,6 +303,101 @@
 					</div>
 			
 				</div>
+				<!-- slider  -->
+				<!-- <div class="swiper-slide">
+					<div style="height: 100%;overflow-y: auto;" id="fh5co-features" class="animate-box">
+						<div class="container">
+							<div style="height: 100%; padding: 0;" class="services-padding">
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+										<h2>My Services</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 text-center">
+										<div class="feature-left">
+											<span class="icon">
+												<i class="icon-paintbrush"></i>
+											</span>
+											<div class="feature-copy">
+												<h3>Web Design</h3>
+												<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-md-4 text-center">
+										<div class="feature-left">
+											<span class="icon">
+												<i class="icon-briefcase"></i>
+											</span>
+											<div class="feature-copy">
+												<h3>Branding</h3>
+												<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+											</div>
+										</div>
+			
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="feature-left">
+											<span class="icon">
+												<i class="icon-search"></i>
+											</span>
+											<div class="feature-copy">
+												<h3>Analytics</h3>
+												<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+			
+			
+								<div class="row">
+									<div class="col-md-4 text-center">
+			
+										<div class="feature-left">
+											<span class="icon">
+												<i class="icon-bargraph"></i>
+											</span>
+											<div class="feature-copy">
+												<h3>Web Developent</h3>
+												<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+											</div>
+										</div>
+			
+									</div>
+			
+									<div class="col-md-4 text-center">
+										<div class="feature-left">
+											<span class="icon">
+												<i class="icon-genius"></i>
+											</span>
+											<div class="feature-copy">
+												<h3>Web Marketing</h3>
+												<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+											</div>
+										</div>
+			
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="feature-left">
+											<span class="icon">
+												<i class="icon-chat"></i>
+											</span>
+											<div class="feature-copy">
+												<h3>Support</h3>
+												<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+				</div> -->
+
+
 				<!-- slider  -->
 				<!-- <div class="swiper-slide">
 					<div id="fh5co-skills" class="animate-box">
@@ -404,6 +509,9 @@
 			
 				</div> -->
 				<!-- slider  -->
+
+
+
 				<div class="swiper-slide">
 					<div style="height:100%;overflow-y: auto;" id="fh5co-work" class="fh5co-bg-dark">
 						<div class="container">
@@ -481,6 +589,47 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- slider contact  -->
+				<div class="swiper-slide">
+					<section class="contact">
+					  <div class="con">
+							<div class="titel">
+							  <p>Let's Talk</p>
+							</div>
+							<div class="body">
+							 <div class="form">
+								<div class="input">
+									<div class="full">
+									  <input type="text"  placeholder="name*" >
+									</div>
+									<div class="col2">
+									  <input type="text" placeholder="Email*">
+									  <input type="text" placeholder="Number*">
+		  
+									</div>
+									<div class="textArea">
+									  <textarea rows="10" placeholder="message"></textarea>
+									</div>
+									<div class="btn">
+									  <button type="submit">Send Message</button>
+		  
+									</div>
+								</div>
+								<div class="icon">
+								  
+								</div>
+							 </div>
+							</div>
+					  </div>
+					</section>
+				  </div>
+
+				  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
 			</div>
 		</div>
 
@@ -530,6 +679,34 @@
 		<!-- Main -->
 		<script type="module" src="./js/nahid.js"></script>
 		<script src="js/main.js"></script>
+		<!-- nav brn  -->
+		<script>
+			
+			const nextSlideBtn = document.querySelectorAll(".next")
+			
+
+const next = document.querySelector(".swiper-button-next")
+
+
+nextSlideBtn.forEach((e)=>{
+
+  e.addEventListener("click",()=>{
+	  next.click()
+  })
+})
+
+const prevSlideBtn = document.querySelectorAll(".prev")
+
+const prev = document.querySelector(".swiper-button-prev")
+
+
+prevSlideBtn.forEach((e)=>{
+
+  e.addEventListener("click",()=>{
+	  prev.click()
+  })
+});
+		</script>
 </body>
 
 </html>

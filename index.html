@@ -154,11 +154,19 @@
     </footer>
 
     <script>
-      console.log("add");
-      document.querySelector(".loadercon").style.display= "none";
-  document.addEventListener("load",()=>{
-    console.log("add2");
-      })
+     document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    ".loadercon").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    ".loadercon").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
     </script>
     <!-- script  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>

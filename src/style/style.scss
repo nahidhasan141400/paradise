@@ -72,7 +72,7 @@ body {
   width: 100%;
   height: auto;
   position: relative;
-  background-color: #0a001a;
+  // background-color: #0a001a;
   z-index: 2;
   top: -100px;
   .intro {
@@ -520,7 +520,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #470280;
+  background-color: #0a001a;
   z-index: 9999999;
 }
 
@@ -531,9 +531,9 @@ nav {
   margin: 20px auto;
   position: relative;
   border-radius: 50% 50% 0 0;
-  border-bottom: 10px solid #FF3D00;
+  border-bottom: 10px solid #481699;
   background-color: #FFF;
-  background-image: radial-gradient(ellipse at center, #FFF 34%, #FF3D00 35%, #FF3D00 54%, #FFF 55%), linear-gradient(#FF3D00 10px, transparent 0);
+  background-image: radial-gradient(ellipse at center, #FFF 34%, #481699 35%, #481699 54%, #FFF 55%), linear-gradient(#481699 10px, transparent 0);
   background-size: 28px 28px;
   background-position: center 20px , center 2px;
   background-repeat: no-repeat;
@@ -549,7 +549,7 @@ nav {
   width: 64px;
   height: 44px;
   border-radius: 50%;
-  box-shadow: 0px 15px #FF3D00 inset;
+  box-shadow: 0px 15px #481699 inset;
   top: 67px;
 }
 .loader::after {
